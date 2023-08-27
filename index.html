@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 60%;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>GET REQUEST</th>
+          <th>RESPONSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Endpoint</th>
+          <th>/</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>/history</th>
+          <th>
+            HTML<br />Lists the last 20 questions<br />performed on the server,
+            and the answers
+          </th>
+        </tr>
+        <tr>
+          <th>Eg1</th>
+          <th>/5/plus/3</th>
+          <th>JSON<br />question:"5+3",answer: 8</th>
+        </tr>
+        <tr>
+          <th>Eg2</th>
+          <th>/3/minus/5</th>
+          <th>JSON<br />question:"3-5",answer: -2</th>
+        </tr>
+        <tr>
+          <th>Eg3</th>
+          <th>/3/minus/5/plus/8</th>
+          <th>JSON<br />question:"3-5+8",answer: 6</th>
+        </tr>
+        <tr>
+          <th>Eg4</th>
+          <th>/3/into/5/plus/8/into/6</th>
+          <th>JSON<br />question:"3*5+8*6",answer: 63</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
